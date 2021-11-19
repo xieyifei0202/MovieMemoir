@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ratingbar="http://schemas.android.com/apk/res-auto"
+    tools:context=".MovieInfoActivity">
+
+    <ImageView
+        android:id="@+id/iv_img"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/iv_img"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:ellipsize="end"
+        />
+
+    <com.example.mymoviememoir.utils.StarBar
+        android:id="@+id/rs_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        ratingbar:starCount="5"
+        ratingbar:starDistance="3dp"
+        ratingbar:starEmpty="@mipmap/iv_start_empty"
+        ratingbar:starFill="@mipmap/iv_start_full"
+        ratingbar:starSize="18dp" />
+
+    <TextView
+        android:id="@+id/tv_star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/rs_view"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginTop="2dp"
+        android:textColor="#FFA024"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/tv_write"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rs_view"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_write"
+        android:layout_marginLeft="10dp"
+        android:textSize="14sp"
+        android:layout_marginRight="10dp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        />
+
+    <TextView
+        android:id="@+id/tv_publish_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/tv_content"
+        android:layout_marginTop="3dp"
+        android:maxLines="1"
+        />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/tv_publish_time"
+        />
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_time"
+        android:lineHeight="20dp"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:text=""
+        />
+
+    <TextView
+        android:id="@+id/tv_w"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Watch"
+        android:gravity="center"
+        android:background="#D5D5D5"
+        android:textColor="#000"
+        android:padding="5dp"
+        android:layout_below="@+id/tv_info"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:visibility="visible"
+        />
+
+    <TextView
+        android:id="@+id/tv_m"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Memory"
+        android:gravity="center"
+        android:background="#D5D5D5"
+        android:textColor="#000"
+        android:padding="5dp"
+        android:layout_below="@+id/tv_info"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/tv_w"
+        android:layout_marginRight="10dp"
+        android:visibility="visible"
+        />
+
+
+
+</RelativeLayout>

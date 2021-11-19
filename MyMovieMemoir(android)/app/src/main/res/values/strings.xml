@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">My Movie Memoir</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Movie Memoir Menu</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">LogOut</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Search</string>
+    <string name="menu_watchlist">Watchlist</string>
+    <string name="menu_map">Map</string>
+    <string name="menu_calender">Facebook</string>
+
+    <string name="home_second">Home Second</string>
+
+    <string name="home_report">Report</string>
+
+    <!--    sign in Activity-->
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="button_sign_in">Sign in</string>
+    <string name="button_sign_up">Sign up</string>
+    <string name="test_username">abby@163.com</string>
+    <string name="test_password">123456</string>
+    <!--sign up fragment-->
+    <string name="first_name">First Name</string>
+    <string name="surname">SurName</string>
+    <string name="gender">Gender</string>
+    <string name="dob">DOB</string>
+    <string name="address">Address</string>
+    <string name="state">State</string>
+    <string name="postcode">Postcode</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="confirm">Confirm</string>
+    <string-array name="array_state">
+        <item>VIC</item>
+        <item>NT</item>
+        <item>SA</item>
+        <item>ACT</item>
+        <item>WA</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+
+    <!--    Oauth-->
+    <string name="welcome_to_appauth">WELCOME TO AUTHORIZATION</string>
+    <string name="make_api_call">Make API Call</string>
+    <string name="make_authorization_request">Make Authorization Request</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="request_complete">API Call Successful.</string>
+    <string name="request_failed">API Call Failed.</string>
+
+    <!-- tools -->
+    <string name="tools_given_name">First Name</string>
+    <string name="tools_family_name">Last Name</string>
+    <string name="tools_full_name">Full Name</string>
+    <string name="login_hint_title">Login Hint</string>
+    <string name="login_hint_description">This key will allow you to send a
+        login hint to the identity provider such as email or username</string>
+    <string name="restrictions_pending_block_user">This application is
+        waiting for further configuration details.</string>
+
+    <string name="permission_rationale_location">Access to the location service is required to demonstrate the \'my location\' feature, which shows your current location on the map.</string>
+
+
+    <string name="location_permission_denied">This sample requires location permission to enable the \'my location\' layer. Please try again and grant access to use the location.\nIf the permission has been permanently denied, it can be enabled from the System Settings &gt; Apps &gt; \'Google Maps API Demos\'.</string>
+    <string name="permission_required_toast">Location permission is required for this demo.</string>
+
+    <string name="facebook_app_id">bc8ca21c418dd6066f4be9a706de4176</string>
+</resources>

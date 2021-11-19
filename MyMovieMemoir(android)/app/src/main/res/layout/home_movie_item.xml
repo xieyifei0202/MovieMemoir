@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:ratingbar="http://schemas.android.com/apk/res-auto"
+    android:layout_marginTop="20dp">
+
+    <ImageView
+        android:id="@+id/iv_img"
+        android:layout_width="110dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_img"
+        android:layout_marginLeft="10dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:ellipsize="end"
+        />
+
+    <com.example.mymoviememoir.utils.StarBar
+        android:id="@+id/rs_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_toRightOf="@+id/iv_img"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        ratingbar:starCount="5"
+        ratingbar:starDistance="3dp"
+        ratingbar:starEmpty="@mipmap/iv_start_empty"
+        ratingbar:starFill="@mipmap/iv_start_full"
+        ratingbar:starSize="18dp" />
+
+    <TextView
+        android:id="@+id/tv_star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/rs_view"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/tv_title"
+        android:layout_marginTop="2dp"
+        android:textColor="#FFA024"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/tv_write"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rs_view"
+        android:layout_toRightOf="@+id/iv_img"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_write"
+        android:layout_toRightOf="@+id/iv_img"
+        android:layout_marginLeft="10dp"
+        android:textSize="14sp"
+        android:layout_marginRight="10dp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        />
+
+    <TextView
+        android:id="@+id/tv_publish_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_img"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/tv_content"
+        android:layout_marginTop="3dp"
+        android:maxLines="1"
+        />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/iv_img"
+        android:layout_toRightOf="@id/iv_img"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_g"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share"
+        android:gravity="center"
+        android:background="#D5D5D5"
+        android:textColor="#000"
+        android:padding="5dp"
+        android:layout_below="@+id/iv_img"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f5f5f5"
+        android:layout_below="@+id/tv_time"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        />
+
+</RelativeLayout>
